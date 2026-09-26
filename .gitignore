@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Raw / generated data
+data/raw/*.csv
+data/raw/*.zip
+data/raw/*.parquet
+data/raw/*.xlsx
+
+# Local databases
+*.duckdb
+*.db
+*.sqlite
+*.sqlite3
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Secrets / local config
+.env.*
+!.env.example
+
+# Generated outputs that should not be versioned
+outputs/tmp/
